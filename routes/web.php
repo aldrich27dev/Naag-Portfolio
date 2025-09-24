@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortfolioControllerr;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PortfolioControllerr::class, 'index']);
