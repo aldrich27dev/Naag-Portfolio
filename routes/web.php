@@ -17,7 +17,7 @@ Route::post('/contact', function (Request $request) {
     ]);
 
     // send email
-    Mail::to('samsongenesis5@gmail.com')->send(new ContactMail(
+    Mail::to('aldrichhcirdla27@gmail.com')->send(new ContactMail(
         $request->fullname,
         $request->email,
         $request->message
